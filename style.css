@@ -1,66 +1,130 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+
 h1{
     font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
-    color:whitesmoke;
-    text-shadow: 3px,4px,5px #000;
+    color: whitesmoke;
+    text-shadow: 3px 4px 5px #000;
+    margin-bottom: 15px;
 }
+
 p{
-     font-size: 20px;
+    font-size: 20px;
     font-weight: bold;
-    text-transform: capitalize;
-    color: whitesmoke
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px #000;
+    max-width: 800px;
 }
+
 section{
     width: 100%;
     height: 100vh;
     display: grid;
-    place-items:center;
+    place-items: center;
     text-align: center;
-    background-image: url("https://www.wrapstyle.com/content/img_cache/1920x/4-nissan-gtr-blue-chrome.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    position: relative;
 }
+
+section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+section div{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Background Images */
+
+section{
+    background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Nissan/Nissan-GTR/744/front-left-side-47.jpg");
+}
+
 .sec-1{
-     background-image: url("https://c4.wallpaperflare.com/wallpaper/839/250/337/bmw-jp-performance-bmw-m4-car-wallpaper-preview.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/839/250/337/bmw-jp-performance-bmw-m4-car-wallpaper-preview.jpg");
 }
+
 .sec-2{
-     background-image: url("https://w0.peakpx.com/wallpaper/318/243/HD-wallpaper-lamborghini-lamborghini-aventador-s-blue-car-car-lamborghini-aventador-sport-car-supercar-vehicle.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-image: url("https://w0.peakpx.com/wallpaper/318/243/HD-wallpaper-lamborghini-lamborghini-aventador-s-blue-car-car-lamborghini-aventador-sport-car-supercar-vehicle.jpg");
 }
+
 .sec-3{
-     background-image: url("https://cdn.jdpower.com/JDP_2023%20Porsche%20911%20Carrera%20T%20Blue%20Front%20Quarter%20View.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-image: url("https://cdn.jdpower.com/JDP_2023%20Porsche%20911%20Carrera%20T%20Blue%20Front%20Quarter%20View.jpg");
 }
+
 .sec-4{
-     background-image: url("https://www.datso.fr/images/dg_images/73_1000x2000_3x2/8402B3A9AA2D-73.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-image: url("https://www.datso.fr/images/dg_images/73_1000x2000_3x2/8402B3A9AA2D-73.jpg");
 }
+
 .sec-5{
-     background-image: url("https://exclusivecarregistry.com/render-images?imgid=443922");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-image: url("https://bugatti-newsroom.imgix.net/93471544-a546-4b8b-a4a6-f8ac327a23aa/01%20BUGATTI_Chiron-Profilee_auction?auto=format,compress&cs=srgb&sharp=10&w=380&dpr=2.625");
 }
+
 .sec-6{
-     background-image: url("https://w0.peakpx.com/wallpaper/413/907/HD-wallpaper-audi-audi-r8-v10-lmx-coupe-blue-car-car-coupe-sport-car.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
+    background-image: url("https://w0.peakpx.com/wallpaper/413/907/HD-wallpaper-audi-audi-r8-v10-lmx-coupe-blue-car-car-coupe-sport-car.jpg");
+}
+
+/* New Cars */
+
+.sec-7{
+    background-image: url("https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_240,q_auto:good,w_385/fl7hxq9rczontkgsvvw0.jpg");
+}
+
+.sec-8{
+    background-image: url("https://www.europeanprestige.co.uk/blobs/stock/394/images/0a1e0cb2-45c1-4249-9564-4ea0d13c2ae1/hi4a9303.jpg?width=2000&height=1333");
+}
+
+.sec-9{
+    background-image: url("https://media.tatler.com/photos/6141e341e2598f5f2d8d3613/master/w_1600%2Cc_limit/aston_martin_dbs_superleggera_volante__xenon_grey_145-jpg.jpg");
+}
+
+.sec-10{
+    background-image: url("https://issimi-vehicles-cdn.b-cdn.net/publicamlvehiclemanagement/VehicleDetails/599/timestamped-1718824678864-2023%20Chevrolet%20Corvette%20Z06%20Coupe%203LZ_000008.jpg?width=3840&quality=75");
+}
+
+.sec-11{
+    background-image: url("https://cdn.motor1.com/images/mgl/2N2kWK/s1/spartans-mansory-koenigsegg-jesko.jpg");
+}
+
+.sec-12{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/pagani-huayra-bc-roadster-121-1564501509.jpg?crop=0.746xw:0.686xh;0.135xw,0.263xh&resize=1200:*");
+}
+
+.sec-13{
+    background-image: url("https://media.ed.edmunds-media.com/rolls-royce/ghost/2025/ot/2025_rolls-royce_ghost_f34_ot_31925_1280.jpg");
+}
+
+.sec-14{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2024_Lotus_Emira_First_Edition_3.jpg/1280px-2024_Lotus_Emira_First_Edition_3.jpg");
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px){
+    h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    section{
+        background-attachment: scroll;
+    }
 }
